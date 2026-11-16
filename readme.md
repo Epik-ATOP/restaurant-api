@@ -13,10 +13,10 @@ so this is a really cool API for restaurants using django and a few other things
 
 # Users + authentication
 
-- *Staff* users have `is_staff` enabled. The superuser from step 5 is staff so superuser = admin = staff
+- *Staff* users have `is_staff` enabled. The superuser from step 5 is staff so superuser = admin = staff, makes sense
 - *Customers* are regular people Create them in the admin panel at
   `/admin/` (leave "Staff status" unticked).
-- Get a token by POSTing a username and password to `/api/token/`, then send it
+- Get a token by POSTing (haha get it so funny haha)a username and password to `/api/token/`, then send it
   in the `Authorization: Token <your-token>` header.
 
 > Endpoints
