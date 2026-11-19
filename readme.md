@@ -16,11 +16,11 @@ so this is a really cool API for restaurants using django and a few other things
 - *Staff* users have `is_staff` enabled. The superuser from step 5 is staff so superuser = admin = staff, makes sense
 - *Customers* are regular people Create them in the admin panel at
   `/admin/` (leave "Staff status" unticked).
-- Get a token by POSTing (haha get it so funny haha)a username and password to `/api/token/`, then send it
+- Get a token by POSTing (haha get it so funny haha)a username and password to 
+`/api/token/` then send it
   in the `Authorization: Token <your-token>` header.
 
 > Endpoints
-
 | Method | URL | Auth | Description |
 |--------|-----|------|-------------|
 | GET | /api/menu/ | None | List menu items (filter with `?category=`) |
@@ -33,9 +33,9 @@ so this is a really cool API for restaurants using django and a few other things
 | GET | /api/orders/{id}/ | Staff or owner | Retrieve an order |
 | PATCH | /api/orders/{id}/ | Staff | Update order status |
 
-all list endpoints are paginated
+all list endpoints are paginated (i think)
 
-> some examples
+> some examplesamples
 
 - Get a token
 curl command and the JSON response
